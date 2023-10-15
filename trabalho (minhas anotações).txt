@@ -1,0 +1,27 @@
+https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv (avc)
+
+binary classification with a tabular stroke prediction dataset
+
+o objetivo do trabalho é aplicar as tecnicas de machine learning que estamos aprendemos em uma base de dados conhecida
+
+1. analisar o dataset (explorar o conjunto de dados para entender as caracteristicas, identificas as variaveis relevantes, tratar dados ausentes ou incosistenes se for necessário)
+
+2. escolher os algoritmos (no mínimo 3 para aplicar)
+
+usar qualquer técnica de amostragem para preparar os conjuntos de treino e de teste. tem que justificar a ideia da escolha da amostragem
+
+usar o sktlearn é obrigatório
+
+o ambiente de execução também é livre (colab, localmente..)
+
+fiquem a vontade para usar qualquer bibliotca de plot
+
+é important obvio no final de tudo, qual método é melhor e pq vocês acham que se saiu melhor do que o outro. a apresentação final pode ser via código, mas tem que separar bem, a descrição de cada etapa etc.
+
+6 grupos de 4.
+
+escrevam em algum lugar e compartilhem comigo até 11/10
+
+--
+
+verificar descrição se ta ok com isso.
