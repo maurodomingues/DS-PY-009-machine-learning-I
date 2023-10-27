@@ -7,30 +7,6 @@
 O objetivo deste projeto é aplicar técnicas de Machine Learning para determinar se o sujeito vai ter ou não avc a partir do conjunto de dados "Stroke Prediction Dataset", disponível no Kaggle: <br>
 https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv.
 
-Análise do Dataset:
-
-1. Exploração inicial do conjunto de dados para entender suas características.
-1. Identificação das variáveis relevantes para o problema de determinar o "Stroke".
-1. Tratamento de dados ausentes ou inconsistentes, se necessário.
-
-Escolha dos Algoritmos:
-
-Algoritmos escolhidos para aplicação do problema de predição de AVC:
-Árvore de Decisão, Random Forest, KNN, MLP e Regressão Logística.
-
-Amostragem de Dados:
-
-As seguintes técnicas de amostragem de dados foram utilizadas para preparar o conjunto de treinamento e teste:
-K-Fold e Hold-Out.
-
-Implementação:
-
-Python com pacote do scikit-learn (sklearn), que oferece uma ampla variedade de algoritmos de Machine Learning.
-
-Avaliação e Comparação dos Modelos:
-
-Os modelos foram avaliados com base em métricas adequadas para problemas de classificação: acurácia, precisão, recall e F1-score.
-
 <br>
 
 ## ⚙️Preparação do Ambiente
@@ -72,15 +48,29 @@ Para instalá-las, caso não estejam, utilize o comando:
 
 ## ⚒️Passo a Passo
 
-1. Obtenção dos dados;
-1. Compreensão dos dados;
-1. Carregamento dos dados;
-1. Limpeza e tratamento dos dados;
-1. Montagem dos dados para análise;
-1. Exploração dos dados;
-1. Escolha dos Algoritmos de Machine Learning;
-1. Amostragem de Dados;
-1. Avaliação e Comparação dos Modelos.
+### Análise do Dataset:
+
+1. Exploração inicial do conjunto de dados para entender suas características.
+1. Identificação das variáveis relevantes para o problema de determinar o "Stroke".
+1. Tratamento de dados ausentes ou inconsistentes, se necessário.
+
+### Escolha dos Algoritmos:
+
+Algoritmos escolhidos para aplicação do problema de predição de AVC:
+Árvore de Decisão, Random Forest, KNN, MLP e Regressão Logística.
+
+### Amostragem de Dados:
+
+As seguintes técnicas de amostragem de dados foram utilizadas para preparar o conjunto de treinamento e teste:
+K-Fold e Hold-Out.
+
+### Implementação:
+
+Python com pacote do scikit-learn (sklearn), que oferece uma ampla variedade de algoritmos de Machine Learning.
+
+### Avaliação e Comparação dos Modelos:
+
+Os modelos foram avaliados com base em métricas adequadas para problemas de classificação: acurácia, precisão, recall e F1-score.
 
 >O detalhamento de cada etapa, está comentado no notebook.
 
