@@ -4,7 +4,7 @@
 
 ### **Descrição**
 
-O objetivo deste projeto é aplicar técnicas de Machine Learning para determinar se o sujeito vai ter ou não avc a partir do conjunto de dados "Stroke Prediction Dataset", disponível no Kaggle: 
+O objetivo deste projeto é aplicar técnicas de Machine Learning para determinar se o sujeito vai ter ou não avc a partir do conjunto de dados "Stroke Prediction Dataset", disponível no Kaggle: <br>
 https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv.
 
 Análise do Dataset:
