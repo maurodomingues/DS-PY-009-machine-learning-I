@@ -57,12 +57,17 @@ Para instalá-las, caso não estejam, utilize o comando:
 ### Escolha dos Algoritmos:
 
 Algoritmos escolhidos para aplicação do problema de predição de AVC:
-Árvore de Decisão, Random Forest, KNN, MLP e Regressão Logística.
+1. Árvore de Decisão;
+2. Random Forest;
+3. KNN;
+4. MLP;
+5. Regressão Logística.
 
 ### Amostragem de Dados:
 
 As seguintes técnicas de amostragem de dados foram utilizadas para preparar o conjunto de treinamento e teste:
-K-Fold e Hold-Out.
+1. K-Fold;
+2. Hold-Out.
 
 ### Implementação:
 
