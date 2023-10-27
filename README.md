@@ -46,6 +46,8 @@ Para instalá-las, caso não estejam, utilize o comando:
  pip install -nome da biblioteca-
 ```
 
+<br>
+
 ## ⚒️Passo a Passo
 
 ### Análise do Dataset:
@@ -78,6 +80,8 @@ Python com pacote do scikit-learn (sklearn), que oferece uma ampla variedade de 
 Os modelos foram avaliados com base em métricas adequadas para problemas de classificação: acurácia, precisão, recall e F1-score.
 
 >O detalhamento de cada etapa, está comentado no notebook.
+
+<br>
 
 ## 👨‍💻Autores
 
