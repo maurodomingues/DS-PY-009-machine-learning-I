@@ -4,70 +4,62 @@
 
 ### **Descrição**
 
-Este notebook contém a análise exploratória proposta pelo projeto do módulo de Técnicas de programação I.
-
-O objetivo deste projeto é aplicar técnicas de Machine Learning para determinar se o sujeito vai ter ou não avc a partir de uma base de dados fornecida. O conjunto de dados utilizado para este projeto é "Stroke Prediction Dataset", disponível no Kaggle: https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv.
+O objetivo deste projeto é aplicar técnicas de Machine Learning para determinar se o sujeito vai ter ou não avc a partir do conjunto de dados "Stroke Prediction Dataset", disponível no Kaggle: https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv.
 
 Análise do Dataset:
 
-Exploração inicial do conjunto de dados para entender suas características.
-Identificação das variáveis relevantes para o problema de determinar o "Stroke".
-Tratamento de dados ausentes ou inconsistentes, se necessário.
+1. Exploração inicial do conjunto de dados para entender suas características.
+1. Identificação das variáveis relevantes para o problema de determinar o "Stroke".
+1. Tratamento de dados ausentes ou inconsistentes, se necessário.
 
 Escolha dos Algoritmos:
 
-É necessário escolher no mínimo três algoritmos para aplicar ao problema de predição de AVC.
-Alguns exemplos de algoritmos que podem ser escolhidos: Árvore de Decisão, Random Forest, KNN, MLP, Regressão Linear ou Regressão Logística.
-Deve haver justificativa para a escolha do(s) algoritmo(s) com base na adequação dos algoritmos para o problema em questão.
+Algoritmos escolhidos para aplicação do problema de predição de AVC:
+Árvore de Decisão, Random Forest, KNN, MLP e Regressão Logística.
 
 Amostragem de Dados:
 
-Qualquer técnica de amostragem de dados pode ser utilizada para preparar o conjunto de treinamento e teste.
-Exemplos de técnicas de amostragem incluem divisão aleatória, validação cruzada, bootstrap ou leave-one-out.
-A escolha da técnica de amostragem deve ser explicada e justificada.
+As seguintes técnicas de amostragem de dados foram utilizadas para preparar o conjunto de treinamento e teste:
+K-Fold e Hold-Out.
 
 Implementação:
 
-A implementação do projeto deve ser feita utilizando a linguagem de programação Python.
-O pacote obrigatório a ser utilizado é o scikit-learn (sklearn), que oferece uma ampla variedade de algoritmos de Machine Learning.
-Os demais pacotes utilizados ficam a critério dos alunos, podendo escolher livremente.
-O ambiente de execução do script python pode ser escolhido livremente (Google Colab, Jupyter Notebook, local...)
+Python com pacote do scikit-learn (sklearn), que oferece uma ampla variedade de algoritmos de Machine Learning.
 
 Avaliação e Comparação dos Modelos:
 
-Deve haver treinamento e teste para os modelos escolhidos utilizando os dados amostrados.
-Os modelos devem ser avaliados com base em métricas adequadas para problemas de classificação, como acurácia, precisão, recall e F1-score.
-Os resultados dos modelos devem ser comparados e discutidos, identificando qual apresenta o melhor desempenho na tarefa de determinar a classe.
+Os modelos foram avaliados com base em métricas adequadas para problemas de classificação: acurácia, precisão, recall e F1-score.
 
-Apresentação dos Resultados:
-
-Os alunos devem preparar uma apresentação final (podem escolher livremente como fazê-la) que inclua uma descrição do projeto, as etapas realizadas, os algoritmos escolhidos, os resultados obtidos e as conclusões alcançadas.
-É importante destacar os desafios encontrados durante o projeto e possíveis melhorias ou próximos passos que podem ser realizados.
 <br>
 
 ## ⚙️Preparação do Ambiente
 
 ### **Conjunto de dados**
 
-*Disponíveis no diretório `datasets`.*
+*Disponíveel no diretório `datasets`.*
 
-Para fazer esta análise exploratória, utilizamos os dados da ANP (Agência Nacional do Petróleo, Gás Natural e Biocombustíveis do Brasil), contendo a série histórica dos preços dos combustíves de 2013 a 2023 e a série histórica do IPCA(Índice Nacional de Preços ao Consumidor Amplo) disponibilizada pelo IBGE(Instituto Brasileiro de Geografia e Estatística)
-
- >Obs.:Os arquivos cujos tamanhos excedem 100Mb estão compactados. Caso deseje clonar este repositório, será necessário descompactar estes arquivos  dentro do diretório`datasets`.
+Dataset obtido em:
+https://www.kaggle.com/competitions/playground-series-s3e2/data?select=train.csv
 
 ### **Bibliotecas**
 
 Este notebook foi desenvolvido em Jupiter e utiliza as bibliotecas abaixo:
 
 ```
- os
- numpy as np
- pandas as pd
- openpyxl 
- plotly.express as px
- plotly.io as pio
- matplotlib.pyplot as plt
- seaborn as sns
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import train_test_split, GridSearchCV, RandomizedSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import recall_score, precision_score, accuracy_score, f1_score, confusion_matrix
+from sklearn.model_selection import cross_val_predict, cross_val_score, StratifiedKFold
+
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
  ```
 
@@ -84,14 +76,23 @@ Para instalá-las, caso não estejam, utilize o comando:
 1. Carregamento dos dados;
 1. Limpeza e tratamento dos dados;
 1. Montagem dos dados para análise;
-1. Exploração dos dados.
+1. Exploração dos dados;
+1. Escolha dos Algoritmos de Machine Learning;
+1. Amostragem de Dados;
+1. Avaliação e Comparação dos Modelos.
 
 >O detalhamento de cada etapa, está comentado no notebook.
 
 ## 👨‍💻Autores
 
 Ana Zanetti:  
-https://github.com/anazanetti  
+https://github.com/anazanetti
+
+Vagner Martins:  
+https://github.com/manago13
+
+Paula Capuano:  
+https://github.com/paulacapuano
 
 Mauro Domingues:  
 https://github.com/maurodomingues  
